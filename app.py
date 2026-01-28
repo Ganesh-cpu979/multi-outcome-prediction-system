@@ -8,7 +8,7 @@ import random
 # -------------------------------------------
 # 1. Models Load karna (Safe Mode)
 # -------------------------------------------
-models_dir = 'Models'
+models_dir = '.'
 
 def load_model(filename):
     try:
@@ -468,3 +468,4 @@ elif selected == t['opt_cold']:
         st.session_state['aud_cold'] = msg
 
     if 'aud_cold' in st.session_state and st.button(t['btn_audio']): speak(st.session_state['aud_cold'], selected_lang_code)
+
